@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Landing</title>
+</head>
+
+<body>
+  <section class="content">
+
+    <nav class="navbar">
+      <div class="navbar__content">
+        <img src="./lego.png" alt="lego">
+        <ul>
+          <li><a href="">EXCLUSIVOS</a></li>
+          <li><a href="">NUEVOS</a></li>
+          <li><a href="">GIF CARDS</a></li>
+          <li><a href="">FIND A STORE</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="content__main">
+        <p>Diseña tu</p>
+        <h1>Súper Héroe!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi distinctio error doloremque fuga corporis! Deserunt dignissimos laudantium earum praesentium rem? Aliquid quod, accusantium est voluptatum eveniet totam blanditiis aliquam recusandae.</p>
+    </section>
+   
+
+    <aside class="content__aside">
+      <div></div>
+      <p>Superman</p>
+      <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman">
+      
+    </aside>
+
+    <section class="content__footer">
+      <div id="button1">
+        <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="spiderman">
+      </div>
+      <div id="button2">
+        <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="robin">
+      </div>
+      <div id="button3">
+        <img src="https://i.ibb.co/M18p91c/batman.webp" alt="robin">
+      </div>
+    </section>
+
+  </section>
+
+<!--Loader-->
+  <section class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+
+<!--Modal-->
+  <section class="modal hidden">
+
+    <div class="modal__content">
+      <img class='modal__content-close visible' src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="close" srcset="">
+    
+
+      <div class="modal__content-slider">
+        <input type="radio" name="slider1" id="radio1" checked>
+        <input type="radio" name="slider1" id="radio2">
+        <input type="radio" name="slider1" id="radio3">
+
+        <div class="cards">
+
+          <label for="radio1" id="card1" class="card">
+            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="">
+          </label>
+          <label for="radio2" id="card2" class="card">
+            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="">
+          </label>
+          <label for="radio3" id="card3" class="card">
+            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="">
+          </label>
+
+        </div>
+      </div>
+   
+      <button class="modal__button">Lo quiero!</button>
+   
+    </div>
+  
+  </section>
+
+</body>
+
+<script>
+  const modal = document.querySelector('.modal');
+  const button1 = document.querySelector('#button1');
+  const closed = document.querySelector('.modal__content-close');
+
+  button1.addEventListener('click', () => {
+    modal.classList.remove('hidden')
+    modal.classList.add('visible')
+  });
+  closed.addEventListener('click', () => {
+    modal.classList.add('hidden')
+    modal.classList.remove('visible')
+  })
+
+</script>
+
+</html>
