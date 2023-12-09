@@ -70,6 +70,7 @@ body{
   position: absolute;
   z-index: 1;
   width: 100%;
+  min-width: 740px;
   height: 100vh;
 
   display: grid;
@@ -81,6 +82,7 @@ body{
 }
 .navbar {
   grid-area: nav;
+  min-width: 390px;
 }
 .navbar__content {
   display: flex;
@@ -107,9 +109,11 @@ body{
   justify-content: space-evenly;
   list-style: none;
   width: 100%;
+  padding-inline-start: 8px;
 }
 .navbar__content ul li {
-  padding-right: 8px;
+  padding-left: 8px;
+  padding-right: 16px;
 }
 .navbar__content ul li a {
   text-decoration: none;
@@ -137,15 +141,16 @@ body{
 .content__main p:first-child {
   font-size: 36px;
   font-weight: 300;
-  margin: 0 0 -14px 44px;
+  margin: 0 0 12px 40px;
 }
 .content__main h1{
   font-size: 48px;
   font-weight: 700;
-  margin: 0 0 28px 0;
+  margin: 0 0 18px 0;
 }
 .content__main p:last-child{
-  width: 60%;
+  width: 80%;
+  font-size: 16px;
   font-weight: 100;
   margin: 0;
 }
